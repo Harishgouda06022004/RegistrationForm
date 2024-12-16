@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: #f4f4f4;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{
+            color: #333;
+            text-align: center;
+        }
+        .form-container{
+            width: 100%;
+            margin: auto;
+            background-color:#fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgb(0,0,0,0.1);
+        }
+        table{
+            width: 100%;
+            border-spacing: 10px;
+        }
+        input[type="text"],input[type="email"],input[type="password"],select{
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"],input[type="checkbox"]{
+               margin: 10px; 
+        }
+        input[type="submit"]:hover{
+            background-color: #218838;
+            cursor: pointer;
+
+        }
+        label{
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div class="Container"></div>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td><label for="name"></label>Name</td>
+                <td><input type="name" id="name" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td><label for="Email"></label>Email</td>
+                <td><input type="email" id="email" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" id="password" placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <td><label >Gender</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                
+                
+                    <input type="radio" id="Female" name="gender" value="Female">
+                    <label for="Female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+                    <select name="country" id="country">
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">Uk</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label >Hobbies</label></td>
+                <td>
+                    <input type="checkbox" id="reading" name="Hobbies" value="Reading">
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" id="Coding" name="Hobbies" value="Coding">
+                    <label for="Coding">Codding</label>
+                    <input type="checkbox" id="Cricket" name="Hobbies" value="Cricket">
+                    <label for="Cricket">Cricket</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Register"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
