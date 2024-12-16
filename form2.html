@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+       body {
+           background-color: #f4f4f4;
+           font-family: Arial, sans-serif;
+       }s
+       h2 {
+           color: #333;
+           text-align: center;
+       }
+       .form-container {
+           width: 50%;
+           margin: auto;
+           background-color: #fff;
+           padding: 20px;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       }
+       table {
+           width: 100%;
+           border-spacing: 10px;
+       }
+       input[type="text"], input[type="email"], input[type="password"], select {
+           width: 100%;
+           padding: 10px;
+           font-size: 16px;
+           border: 1px solid #ccc;
+           border-radius: 5px;
+       }
+       input[type="radio"], input[type="checkbox"] {
+           margin-right: 10px;
+       }
+       input[type="submit"] {
+           background-color: #28a745;
+           color: #fff;
+           padding: 10px 15px;
+           font-size: 16px;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+       }
+       input[type="submit"]:hover {
+           background-color: #218838;
+       }
+       label {
+           font-size: 16px;
+           color: #555;
+       }
+    </style>
+</head>
+<body>
+    <h2>RegistrationForm</h2>
+    <divclass="form-container">
+       <form action="#" method="post">
+           <table>
+               <tr>
+                   <td><label for="name">Name:</label></td>
+                   <td><input type="text"id="name" name="name" placeholder="Enter your fullname" required></td>
+               </tr>
+               <tr>
+                   <td><label for="email">Email:</label></td>
+                   <td><input type="email"id="email" name="email" placeholder="Enter your email address" required></td>
+               </tr>
+               <tr>
+                   <td><label for="password">Password:</label></td>
+                   <td><input type="password"id="password" name="password" placeholder="Create a password" required></td>
+               </tr>
+               <tr>
+                   <td><label>Gender:</label></td>
+                   <td>
+                       <input type="radio" id="male" name="gender" value="Male">
+                       <label for="male">Male</label>
+                       <input type="radio" id="female" name="gender" value="Female">
+                       <label for="female">Female</label>
+                   </td>
+               </tr>
+               <tr>
+                   <td><label for="country">Country:</label></td>
+                   <td>
+                       <select id="country" name="country" required>
+                          <option value="">--Select Country--</option>
+                          <option value="India">India</option>
+                          <option value="USA">USA</option>
+                          <option value="UK">UK</option>
+                       </select>
+                   </td>
+               </tr>
+               <tr>
+                   <td><label>Hobbies:</label></td>
+                   <td>
+                       <input type="checkbox" id="reading" name="hobbies" value="Reading">
+                       <label for="reading">Reading</label>
+                       <inputtype="checkbox" id="sports" name="hobbies" value="Sports">
+                       <label for="sports">Sports</label>
+                       <input type="checkbox" id="music" name="hobbies" value="Music">
+                       <label for="music">Music</label>
+                   </td>
+               </tr>
+               <tr>
+                   <td></td>
+                   <td><input type="submit" value="Register"></td>
+               </tr>
+           </table>
+        </form>
+    </div>
+</body>
+</html>
